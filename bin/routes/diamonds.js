@@ -23,7 +23,29 @@ router.get('/exportfromdb',(req, res, next) =>{
         //var raw = JSON.parse(coolnew)
         //console.log(raw);
         //res.status(200).json(raw);
-        var xlsx = json2xls(coolnew//,{
+        var xlsx = json2xls(coolnew,{
+            fields : {
+                styleNumber:'Number',
+                images:{
+                    main:'string',
+                    white:'string',
+                    yellow:'string',
+                    rose:'string'
+                },
+                diamondWeight:'Number',
+                diamondCount:'Number',
+                goldWeight:'Number',
+                designDetails:{
+                    new:Boolean,
+                    featured:Boolean,
+                    highestSelling:Boolean,
+                    fancyDiamond:Boolean
+                },
+                company:'string',
+                favouriteCount:'Number'}
+         }
+            
+            //,{
             //fields : {_id:'string',title:'string',body:'string',code:'string',author:'string'}
        // }
         );
