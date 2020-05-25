@@ -19,6 +19,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "json2xls": "^0.1.2",
+    "jsonexport": "^2.4.1",
     "mongoose": "^5.9.15",
     "morgan": "^1.10.0",
     "xlsx-to-json-lc": "^0.5.0"
